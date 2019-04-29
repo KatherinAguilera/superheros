@@ -1,0 +1,121 @@
+
+/********Heros**************/
+
+.Home-title{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  border: dashed 3px white;
+  margin: 5px 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+  background: inherit;
+  animation: var(--animation-stars);
+}
+h2{
+  font-size: 40px;
+  -webkit-clip-path: polygon(6px 0%, calc(100% - 6px) 0%, 100% 6px, 100% calc(100% - 6px), calc(100% - 6px) 100%, 6px 100%, 0% calc(100% - 6px), 0% 6px);
+  clip-path: polygon(6px 0%, calc(100% - 6px) 0%, 100% 6px, 100% calc(100% - 6px), calc(100% - 6px) 100%, 6px 100%, 0% calc(100% - 6px), 0% 6px);
+  color:#0b032d;
+  padding: 3px 5px;
+  border: 3px solid #0b032d;
+  background: white;
+}
+h2  span{
+  color: #E8B723;
+}
+h4{
+  font-size: 13px;
+  text-align: center;
+  margin: 60px 20px;
+  color:#E77991;
+}
+h4 p{
+  color: white;
+  background: #E77991;
+}
+.Super{
+  grid-area: Heros;
+  background: var(--background-blue);
+  border-top: var(--border-pink);
+  /* animation: var(--animation-stars); */
+  height: auto;
+}
+.h2-hero{
+  border: var(--border-bottom);
+}
+.Heros{
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 350px);
+  grid-gap: 20px;
+  justify-content: center;
+  grid-auto-flow: dense;
+  margin-top: 50px;
+}
+.Hero-id{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.Hero{
+  padding: 10px;
+  background: rgb(255, 255, 255, .3);
+  grid-auto-rows: auto;
+}
+.Hero figure{
+  margin:0;
+  padding: 0;
+  transition: .4s;
+  transition-delay: .2s;
+  transition-timing-function: ease-in-out;
+}
+.Hero figure:hover{
+  transform:scale(1.2);
+}
+.Hero img{
+  max-width: 100%;
+  object-fit: contain;
+}
+.Hero p{
+  background: linear-gradient(205deg, #e2718d 0%,  #f9989f 50%);
+  border: 3px solid #0b032d;
+  padding: 8px;
+  color: #113f67;
+  font-weight: bold;
+  clip-path: polygon(6px 0%, calc(100% - 6px) 0%, 100% 6px, 100% calc(100% - 6px), calc(100% - 6px) 100%, 6px 100%, 0% calc(100% - 6px), 0% 6px);
+}
+
+.Hero p span{
+  background:whitesmoke;
+  text-align: end;
+  border-radius: 40% 0 / 20% 0;
+  padding: 2px 2px;
+  margin-right:5px;
+}
+.Hero a:hover{
+  background: white;
+  color: #0b032d;
+}
+
+.HomeFooter{
+  margin-left: 50px;
+}
+/* Animaciones */
+
+@media screen and (max-width: 768px){
+  .Heros{
+    grid-template-columns: repeat(auto-fit, 315px);
+    margin-top:20px;
+  }
+  .Hero figure:hover{
+    transform:scale(1);
+  }
+}
+@media screen and (max-width: 375px){
+  h2{
+    font-size: 35px;
+  }
+}
+li {
+  list-style: none;
+}

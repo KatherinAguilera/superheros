@@ -1,0 +1,29 @@
+/******* Likes & Dislikes *********/
+.Count {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-top:5px;
+}
+.Like{
+  background: #71e2a6;
+  cursor: pointer;
+
+}
+.Dislike{
+  background: #E9B922;
+}
+.General{
+  border-radius: 15px;
+  padding: 5px;
+  transition: .3s;
+  border: none;
+  outline: none;
+}
+.General:hover{
+  cursor: pointer;
+}
+.General:active{
+  transform: scale(0.7);
+  border: none;
+}
